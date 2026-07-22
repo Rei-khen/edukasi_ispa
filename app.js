@@ -14,34 +14,114 @@ document.addEventListener("DOMContentLoaded", () => {
       answers: [],
       questions: [
         {
-          question: "Apa kepanjangan dari istilah medis ISPA?",
+          question: "1. Apa kepanjangan dari ISPA?",
           options: [
-            "Infeksi Saluran Pencernaan Akut",
-            "Infeksi Saluran Pernapasan Akut",
-            "Infeksi Selaput Paru-paru Akut"
+            "A. Infeksi Sistem Pernapasan Akut",
+            "B. Infeksi Saluran Pernapasan Akut",
+            "C. Infeksi Saluran Pencernaan Akut",
+            "D. Infeksi Sistem Pencernaan Atas"
           ],
           correct: 1,
-          explanation: "ISPA singkatan dari Infeksi Saluran Pernapasan Akut, infeksi yang menyerang pernapasan mulai dari hidung hingga paru-paru."
+          explanation: "ISPA adalah singkatan dari Infeksi Saluran Pernapasan Akut."
         },
         {
-          question: "Bagaimanakah media penularan paling umum dari penyakit ISPA?",
+          question: "2. Berapa lama umumnya penyakit ISPA berlangsung?",
           options: [
-            "Percikan droplet saat batuk/bersin",
-            "Gigitan nyamuk Aedes aegypti",
-            "Konsumsi makanan instan berlebih"
-          ],
-          correct: 0,
-          explanation: "ISPA paling mudah menular melalui percikan air liur (droplet) penderita yang melayang di udara saat batuk atau bersin."
-        },
-        {
-          question: "Kelompok manakah yang paling rentan mengalami komplikasi fatal akibat ISPA?",
-          options: [
-            "Remaja aktif usia sekolah",
-            "Orang dewasa usia produktif",
-            "Balita/anak-anak dan lanjut usia"
+            "A. Lebih dari 1 bulan",
+            "B. 21 hari",
+            "C. Kurang dari 14 hari",
+            "D. Lebih dari 30 hari"
           ],
           correct: 2,
-          explanation: "Balita (sistem imun belum matang) dan Lansia (daya tahan tubuh menurun) sangat rentan terhadap komplikasi ISPA seperti Pneumonia."
+          explanation: "Penyakit ISPA umumnya berlangsung secara akut yaitu kurang dari 14 hari."
+        },
+        {
+          question: "3. Berikut yang merupakan penyebab ISPA adalah...",
+          options: [
+            "A. Virus dan bakteri",
+            "B. Kekurangan vitamin saja",
+            "C. Cedera pada dada",
+            "D. Gigitan serangga"
+          ],
+          correct: 0,
+          explanation: "ISPA paling sering disebabkan oleh infeksi virus dan bakteri."
+        },
+        {
+          question: "4. Bagaimana cara penularan ISPA yang paling umum?",
+          options: [
+            "A. Gigitan nyamuk",
+            "B. Makanan yang basi",
+            "C. Percikan batuk atau bersin (droplet) dari penderita",
+            "D. Air minum"
+          ],
+          correct: 2,
+          explanation: "Penularan ISPA paling umum terjadi melalui percikan air liur (droplet) saat batuk atau bersin."
+        },
+        {
+          question: "5. Manakah yang merupakan gejala ISPA?",
+          options: [
+            "A. Batuk dan pilek",
+            "B. Demam",
+            "C. Sakit tenggorokan",
+            "D. Semua jawaban benar"
+          ],
+          correct: 3,
+          explanation: "Gejala ISPA meliputi batuk, pilek, demam, dan sakit tenggorokan."
+        },
+        {
+          question: "6. Siapa yang lebih berisiko mengalami ISPA?",
+          options: [
+            "A. Balita dan lansia",
+            "B. Orang dengan daya tahan tubuh rendah",
+            "C. Penderita penyakit kronis",
+            "D. Semua jawaban benar"
+          ],
+          correct: 3,
+          explanation: "Balita, lansia, orang dengan imun rendah, dan penderita penyakit kronis memiliki risiko lebih tinggi."
+        },
+        {
+          question: "7. Berikut ini merupakan cara mencegah ISPA, kecuali...",
+          options: [
+            "A. Mencuci tangan dengan sabun",
+            "B. Menggunakan masker saat sakit",
+            "C. Menghindari asap rokok",
+            "D. Berbagi alat makan dengan penderita ISPA"
+          ],
+          correct: 3,
+          explanation: "Berbagi alat makan dengan penderita justru meningkatkan risiko tertular ISPA."
+        },
+        {
+          question: "8. Apa yang sebaiknya dilakukan saat mengalami ISPA ringan?",
+          options: [
+            "A. Istirahat yang cukup",
+            "B. Minum air putih yang banyak",
+            "C. Mengonsumsi makanan bergizi",
+            "D. Semua jawaban benar"
+          ],
+          correct: 3,
+          explanation: "Penanganan ISPA ringan meliputi istirahat cukup, banyak minum air putih, dan nutrisi bergizi."
+        },
+        {
+          question: "9. Kapan seseorang harus segera pergi ke fasilitas kesehatan?",
+          options: [
+            "A. Saat mengalami sesak napas",
+            "B. Bibir tampak membiru",
+            "C. Penurunan kesadaran",
+            "D. Semua jawaban benar"
+          ],
+          correct: 3,
+          explanation: "Sesak napas, bibir membiru, dan penurunan kesadaran adalah tanda bahaya ISPA berat yang butuh penanganan medis segera."
+        },
+        {
+          question: "10. Mengapa penting menjaga ventilasi rumah tetap baik?",
+          options: [
+            "A. Agar rumah terlihat lebih luas",
+            "B. Untuk menjaga sirkulasi udara dan mengurangi risiko penularan ISPA",
+            "C. Agar dinding rumah tidak cepat rusak",
+            "D. Agar suhu rumah lebih dingin"
+          ],
+          correct: 1,
+          explanation: "Ventilasi yang baik menjaga sirkulasi udara lancar sehingga mengurangi konsentrasi kuman di dalam ruangan."
         }
       ]
     },
@@ -266,11 +346,12 @@ document.addEventListener("DOMContentLoaded", () => {
     // Check if completed
     if (qIndex >= quizData.questions.length) {
       // Completed View
-      let performanceMsg = "Hebat! Pemahaman Anda sangat baik.";
-      if (quizData.score <= 1) {
-        performanceMsg = "Yuk baca-baca lagi materi edukasi di atas agar lebih paham.";
-      } else if (quizData.score === 2) {
-        performanceMsg = "Bagus sekali! Sedikit lagi nilai sempurna.";
+      let percentage = Math.round((quizData.score / quizData.questions.length) * 100);
+      let performanceMsg = "Luar biasa! Pemahaman Anda tentang ISPA sangat sempurna.";
+      if (percentage < 60) {
+        performanceMsg = "Yuk baca-baca lagi materi edukasi di atas agar lebih paham tentang ISPA.";
+      } else if (percentage < 90) {
+        performanceMsg = "Bagus sekali! Pemahaman Anda tentang ISPA sudah sangat baik.";
       }
 
       quizBox.innerHTML = `

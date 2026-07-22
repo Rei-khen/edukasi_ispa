@@ -828,6 +828,201 @@ body {
   color: #d90429;
 }
 
+/* Langkah-Langkah Pencegahan ISPA Section */
+.prevention-steps-panel {
+  margin-bottom: 24px;
+}
+
+.prevention-top-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.prevention-step-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  border: 1.5px solid transparent;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-normal);
+}
+
+.prevention-step-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Badge styling for 01, 02, 03, 04, 05 */
+.prevention-step-badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 4px 12px;
+  border-bottom-right-radius: 12px;
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #ffffff;
+  z-index: 2;
+}
+
+/* Step 1: Green/Teal */
+.prevention-step-card.step-1 {
+  border-color: #2ec4b6;
+}
+.prevention-step-card.step-1 .prevention-step-badge {
+  background: #02a854;
+}
+.prevention-step-card.step-1 .prevention-step-top {
+  background: #e6f7f5;
+}
+.prevention-step-card.step-1 .prevention-step-title {
+  color: #02a854;
+}
+.prevention-step-card.step-1 .prevention-step-list li::before {
+  color: #02a854;
+}
+
+/* Step 2: Blue */
+.prevention-step-card.step-2 {
+  border-color: #4895ef;
+}
+.prevention-step-card.step-2 .prevention-step-badge {
+  background: #2b6cb0;
+}
+.prevention-step-card.step-2 .prevention-step-top {
+  background: #ebf8ff;
+}
+.prevention-step-card.step-2 .prevention-step-title {
+  color: #2b6cb0;
+}
+.prevention-step-card.step-2 .prevention-step-list li::before {
+  color: #2b6cb0;
+}
+
+/* Step 3: Orange */
+.prevention-step-card.step-3 {
+  border-color: #ff9f1c;
+}
+.prevention-step-card.step-3 .prevention-step-badge {
+  background: #e07a24;
+}
+.prevention-step-card.step-3 .prevention-step-top {
+  background: #fff3e0;
+}
+.prevention-step-card.step-3 .prevention-step-title {
+  color: #e07a24;
+}
+.prevention-step-card.step-3 .prevention-step-list li::before {
+  color: #e07a24;
+}
+
+/* Step 4: Yellow/Gold */
+.prevention-step-card.step-4 {
+  border-color: #f6c23e;
+}
+.prevention-step-card.step-4 .prevention-step-badge {
+  background: #d69e2e;
+}
+.prevention-step-card.step-4 .prevention-step-top {
+  background: #fefcbf;
+}
+.prevention-step-card.step-4 .prevention-step-title {
+  color: #b7791f;
+}
+.prevention-step-card.step-4 .prevention-step-list li::before {
+  color: #b7791f;
+}
+
+/* Step 5: Navy/Dark Blue */
+.prevention-step-card.step-5 {
+  border-color: #3182ce;
+}
+.prevention-step-card.step-5 .prevention-step-badge {
+  background: #1a365d;
+}
+.prevention-step-card.step-5 .prevention-step-top {
+  background: #ebf8ff;
+}
+.prevention-step-card.step-5 .prevention-step-title {
+  color: #1a365d;
+}
+.prevention-step-card.step-5 .prevention-step-list li::before {
+  color: #1a365d;
+}
+
+.prevention-step-top {
+  padding: 20px 10px 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 105px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.prevention-step-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prevention-step-img-box img {
+  max-height: 70px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.prevention-step-img-box.multi-img {
+  display: flex;
+  gap: 8px;
+}
+
+.prevention-step-img-box.multi-img img {
+  max-height: 60px;
+}
+
+.prevention-step-title {
+  font-family: var(--font-heading);
+  font-size: 0.88rem;
+  font-weight: 800;
+  text-align: center;
+  line-height: 1.25;
+  margin-bottom: 8px;
+}
+
+.prevention-step-content {
+  padding: 12px 10px 14px 10px;
+  flex: 1;
+}
+
+.prevention-step-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.prevention-step-list li {
+  font-size: 0.68rem;
+  color: #2d3748;
+  line-height: 1.4;
+  margin-bottom: 4px;
+  position: relative;
+  padding-left: 14px;
+}
+
+.prevention-step-list li::before {
+  content: '•';
+  position: absolute;
+  left: 2px;
+  font-weight: 800;
+}
+
 /* Call to Action Banner (Footer Info Card) */
 .alert-banner {
   background: var(--bg-card);

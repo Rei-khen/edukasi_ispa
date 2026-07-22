@@ -956,6 +956,110 @@ body {
   color: #1a365d;
 }
 
+/* Step 6: Purple */
+.prevention-step-card.step-6 {
+  border-color: #8b5cf6;
+}
+.prevention-step-card.step-6 .prevention-step-badge {
+  background: #6d28d9;
+}
+.prevention-step-card.step-6 .prevention-step-top {
+  background: #f3e8ff;
+}
+.prevention-step-card.step-6 .prevention-step-title {
+  color: #6d28d9;
+}
+.prevention-step-card.step-6 .prevention-step-list li::before {
+  color: #6d28d9;
+}
+
+/* Step 7: Teal */
+.prevention-step-card.step-7 {
+  border-color: #2ec4b6;
+}
+.prevention-step-card.step-7 .prevention-step-badge {
+  background: #0d9488;
+}
+.prevention-step-card.step-7 .prevention-step-top {
+  background: #e6f7f5;
+}
+.prevention-step-card.step-7 .prevention-step-title {
+  color: #0d9488;
+}
+.prevention-step-card.step-7 .prevention-step-list li::before {
+  color: #0d9488;
+}
+
+/* Step 8: Orange */
+.prevention-step-card.step-8 {
+  border-color: #ff9f1c;
+}
+.prevention-step-card.step-8 .prevention-step-badge {
+  background: #e07a24;
+}
+.prevention-step-card.step-8 .prevention-step-top {
+  background: #fff3e0;
+}
+.prevention-step-card.step-8 .prevention-step-title {
+  color: #e07a24;
+}
+.prevention-step-card.step-8 .prevention-step-list li::before {
+  color: #e07a24;
+}
+
+/* Step 9: Rose/Red */
+.prevention-step-card.step-9 {
+  border-color: #f43f5e;
+}
+.prevention-step-card.step-9 .prevention-step-badge {
+  background: #be123c;
+}
+.prevention-step-card.step-9 .prevention-step-top {
+  background: #ffe4e6;
+}
+.prevention-step-card.step-9 .prevention-step-title {
+  color: #be123c;
+}
+.prevention-step-card.step-9 .prevention-step-list li::before {
+  color: #be123c;
+}
+
+/* Step 10: Gold/Amber */
+.prevention-step-card.step-10 {
+  border-color: #f59e0b;
+}
+.prevention-step-card.step-10 .prevention-step-badge {
+  background: #b45309;
+}
+.prevention-step-card.step-10 .prevention-step-top {
+  background: #fef3c7;
+}
+.prevention-step-card.step-10 .prevention-step-title {
+  color: #b45309;
+}
+.prevention-step-card.step-10 .prevention-step-list li::before {
+  color: #b45309;
+}
+
+/* Step Warning Card: Danger Red */
+.prevention-step-card.step-warning {
+  border-color: #b91c1c;
+}
+.prevention-step-card.step-warning .prevention-step-top {
+  background: #fee2e2;
+}
+.prevention-step-card.step-warning .prevention-step-title {
+  color: #b91c1c;
+}
+
+.warning-text {
+  font-size: 0.65rem;
+  color: #450a0a;
+  line-height: 1.4;
+  text-align: center;
+  font-weight: 500;
+}
+
 .prevention-step-top {
   padding: 20px 10px 10px 10px;
   display: flex;
@@ -999,6 +1103,14 @@ body {
 .prevention-step-content {
   padding: 12px 10px 14px 10px;
   flex: 1;
+}
+
+.step-desc {
+  font-size: 0.68rem;
+  color: #2d3748;
+  line-height: 1.45;
+  text-align: center;
+  margin: 0;
 }
 
 .prevention-step-list {

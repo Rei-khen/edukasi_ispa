@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lawan ISPA - Kenali ISPA, Lindungi Keluarga!</title>
+  <meta name="description" content="Aplikasi edukasi kesehatan interaktif untuk mengenali, mendeteksi gejala, dan mencegah Infeksi Saluran Pernapasan Akut (ISPA).">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       DESKTOP PRESENTATION SHOWCASE FRAMEWORK
+       ========================================================================== -->
+  <div class="presentation-container">
+    
+    <!-- Left column: Desktop descriptive presentation -->
+    <div class="presentation-info">
+      <div class="badge">
+        <span style="font-size: 1rem;">🛡️</span> Kemenkes RI Terverifikasi
+      </div>
+      <h1>Lindungi Paru-Paru Kita, <span>Lawan ISPA!</span></h1>
+      <p>Aplikasi edukasi interaktif untuk mendeteksi gejala secara mandiri, melacak rutinitas pencegahan harian, dan mendaftar antrean faskes secara praktis. Cegah infeksi saluran pernapasan demi kesehatan keluarga tercinta.</p>
+      
+      <!-- Key Features List -->
+      <div class="feature-list">
+        <div class="feature-item">
+          <div class="feature-icon-wrapper">📖</div>
+          <div class="feature-text">
+            <h4>Edukasi Interaktif</h4>
+            <p>Materi penyebab, cara penularan, dan mini-kuis berhadiah sertifikat pemahaman.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon-wrapper">🌡️</div>
+          <div class="feature-text">
+            <h4>Detektor Gejala Mandiri</h4>
+            <p>Analisis risiko gejala secara cepat menggunakan algoritma bobot tingkat keparahan.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon-wrapper">🧼</div>
+          <div class="feature-text">
+            <h4>Rutinitas Pencegahan</h4>
+            <p>Checklist pencegahan harian interaktif dan panduan cuci tangan standar WHO.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon-wrapper">🏥</div>
+          <div class="feature-text">
+            <h4>Reservasi Antrean</h4>
+            <p>Cari faskes terdekat (RSUD, Puskesmas, Klinik) dan daftar antrean tanpa antri fisik.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Simulation Download / QR Code Mockup -->
+      <div class="download-prompt">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+          <line x1="12" y1="18" x2="12.01" y2="18"></line>
+        </svg>
+        <div class="download-text">
+          <h5>Gunakan di Handphone Anda</h5>
+          <p>Scan QR atau buka link ini langsung di smartphone untuk mengaktifkan mode native full-screen.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right column: Interactive mobile phone simulator -->
+    <div class="phone-mockup-wrapper">
+      <!-- Phone Notch / Camera -->
+      <div class="phone-notch">
+        <div class="phone-speaker"></div>
+      </div>
+      
+      <!-- Simulated Phone Status Bar -->
+      <div class="phone-status-bar">
+        <span class="status-left">20:47</span>
+        <div class="status-right">
+          <!-- Signal Icon -->
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c-1.2 0-2.4.2-3.6.7L19.3 15c.5-1.2.7-2.4.7-3.6 0-5.5-4.5-10-10-10zM2.9 3l1.4 1.4C3.4 5.7 3 7.3 3 9c0 5.5 4.5 10 10 10 1.7 0 3.3-.4 4.6-1.3l1.4 1.4L21 21l-1.4-1.4L4.3 4.3 2.9 3zm7.6 7.6L13.8 14H9v-3.4z"/></svg>
+          <!-- Wifi Icon -->
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21l-1.4-1.4c-3.1-3.1-3.1-8.2 0-11.3l1.4-1.4 1.4 1.4c3.1 3.1 3.1 8.2 0 11.3L12 21z"/></svg>
+          <!-- Battery Icon -->
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 5H3a2 2 0 00-2 2v10a2 2 0 002 2h14a2 2 0 002-2V7a2 2 0 00-2-2zm-1 11H4V8h12v8zm5-7h-1v6h1V9z"/></svg>
+        </div>
+      </div>
+
+      <!-- iOS style Bottom Home Bar -->
+      <div class="phone-home-indicator"></div>
+
+      <!-- ==========================================================================
+           MAIN WEB APPLICATION WORKSPACE
+           ========================================================================== */ -->
+      <div class="app-container">
+        
+        <!-- App Content Area (Dynamic view switcher) -->
+        <main class="app-content">
+          
+          <!-- Static Header inside application -->
+          <header class="app-header">
+            <div class="brand">
+              <div class="brand-icon">
+                <!-- Custom Lungs SVG Icon -->
+                <svg viewBox="0 0 24 24">
+                  <path d="M12,2A3,3,0,0,0,9,5V6H8a5,5,0,0,0-5,5v4.5A5.5,5.5,0,0,0,8.5,21h1a2.5,2.5,0,0,0,2.5-2.5V11h0v7.5A2.5,2.5,0,0,0,14.5,21h1a5.5,5.5,0,0,0,5.5-5.5V11a5,5,0,0,0-5-5H15V5A3,3,0,0,0,12,2Z"/>
+                </svg>
+              </div>
+              <h1 class="brand-text">Lawan ISPA</h1>
+            </div>
+            
+            <button class="info-btn" id="info-btn" title="Pusat Informasi Layanan">
+              <!-- Info Circle SVG -->
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h-2v-2h4v8zm0-10h-2v-2h2v2z"/>
+              </svg>
+              Pusat Informasi
+            </button>
+          </header>
+
+          <!-- ==========================================================================
+               VIEW PANEL 1: EDUKASI (ACTIVE)
+               ========================================================================== -->
+          <section id="edukasi-view" class="view-panel active">
+            
+            <!-- Hero Banner Card -->
+            <div class="hero-card">
+              <div class="hero-content">
+                <h2>Kenali ISPA, <span>Lindungi Keluarga!</span></h2>
+                <p>ISPA (Infeksi Saluran Pernapasan Akut) adalah infeksi yang menyerang salah satu bagian atau lebih dari saluran napas, mulai dari hidung hingga kantung paru-paru.</p>
+              </div>
+              <div class="hero-image-wrapper">
+                <img src="assets/foto_keluarga.png" alt="Keluarga Sehat Menggunakan Masker" class="hero-image">
+              </div>
+            </div>
+
+            <!-- Causes Section -->
+            <div class="section-title-wrapper">
+              <h2 class="section-title">Bagaimana ISPA Menyebar?</h2>
+              <p class="section-subtitle">Ketahui penyebabnya agar bisa menghindarinya.</p>
+            </div>
+
+            <div class="grid-3-col">
+              <!-- Cause Card 1: Virus -->
+              <div class="cause-card virus" data-cause="virus">
+                <div class="cause-icon-box">
+                  <img src="assets/gambar_virus.png" alt="Ikon Virus Penyebab ISPA">
+                </div>
+                <h3>Virus</h3>
+                <p>Influenza, Coronavirus, RSV</p>
+                <span class="number-badge">01</span>
+              </div>
+              
+              <!-- Cause Card 2: Bakteri -->
+              <div class="cause-card bakteri" data-cause="bakteri">
+                <div class="cause-icon-box">
+                  <img src="assets/gambar_bakteri.png" alt="Ikon Bakteri Penyebab ISPA">
+                </div>
+                <h3>Bakteri</h3>
+                <p>Streptococcus, Pneumococcus</p>
+                <span class="number-badge">02</span>
+              </div>
+              
+              <!-- Cause Card 3: Lingkungan -->
+              <div class="cause-card lingkungan" data-cause="lingkungan">
+                <div class="cause-icon-box">
+                  <img src="assets/gambar_pabrik.png" alt="Ikon Polutan Pabrik & Lingkungan">
+                </div>
+                <h3>Lingkungan</h3>
+                <p>Asap rokok, polusi, debu</p>
+                <span class="number-badge">03</span>
+              </div>
+            </div>
+
+            <!-- Transmission Section -->
+            <div class="transmission-panel">
+              <div class="section-title-wrapper" style="margin-bottom: 10px;">
+                <h3 class="section-title">Cara Penularan</h3>
+              </div>
+              
+              <div class="transmission-grid">
+                <!-- Transmission 1: Droplets -->
+                <div class="transmission-card t1">
+                  <div class="circle-img-container">
+                    <img src="assets/foto_batuk.png" alt="Orang bersin mengeluarkan droplet">
+                    <div class="overlay-badge">
+                      <!-- Lungs/Droplets icon -->
+                      <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm1 15.5h-2v-2h2v2zm1.07-5.75l-.9.92C12.45 13.42 12 14 12 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/></svg>
+                    </div>
+                  </div>
+                  <p>Percikan air liur (droplet) saat batuk atau bersin.</p>
+                </div>
+
+                <!-- Transmission 2: Contact -->
+                <div class="transmission-card t2">
+                  <div class="circle-img-container">
+                    <img src="assets/foto_batuk_pegang.png" alt="Orang batuk memegang mulut lalu menyentuh wajah">
+                    <div class="overlay-badge">
+                      <!-- Hand/Tap icon -->
+                      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.53c-.26-.81-1-1.4-1.9-1.4h-1v-3c0-.55-.45-1-1-1h-6v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.4z"/></svg>
+                    </div>
+                  </div>
+                  <p>Menyentuh benda yang terkena virus, lalu menyentuh wajah.</p>
+                </div>
+
+                <!-- Transmission 3: Ventilation -->
+                <div class="transmission-card t3">
+                  <div class="circle-img-container">
+                    <img src="assets/foto_ruangan_tertutup.png" alt="Jendela ruangan tertutup udara tidak lancar">
+                    <div class="overlay-badge">
+                      <!-- House/Window Icon -->
+                      <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-9 14H5v-5h5v5zm0-7H5V5h5v5zm9 7h-5v-5h5v5zm0-7h-5V5h5v5z"/></svg>
+                    </div>
+                  </div>
+                  <p>Ruangan tertutup dengan udara yang tidak lancar.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Warning Alert Banner -->
+            <div class="alert-banner">
+              <div class="alert-banner-left">
+                <img src="assets/foto_perisai.png" alt="Ikon Perisai Medis Pelindung">
+              </div>
+              <div class="alert-banner-right">
+                <p>ISPA bisa menyerang siapa saja, terutama anak-anak dan lansia.</p>
+                <h4>Cegah sejak dini, jaga kesehatan untuk keluarga tercinta!</h4>
+              </div>
+              <div style="flex:0.3; display:flex; justify-content:flex-end;">
+                <img src="assets/foto_perisai_2.png" alt="Karakter anak dengan perisai imun" style="width:50px; height:50px; object-fit:contain;">
+              </div>
+            </div>
+
+            <!-- Dynamic Interactive Quiz -->
+            <div class="quiz-widget" id="quiz-container">
+              <!-- Rendered via JavaScript on boot -->
+            </div>
+          </section>
+
+          <!-- ==========================================================================
+               VIEW PANEL 2: GEJALA (SYMPTOMS INTERACTIVE CHECKER)
+               ========================================================================== -->
+          <section id="gejala-view" class="view-panel">
+            <div class="symptom-header-card">
+              <h2>Deteksi Gejala</h2>
+              <p>Periksa kondisi kesehatan pernapasan Anda secara mandiri untuk mendapatkan rekomendasi penanganan awal yang tepat.</p>
+            </div>
+
+            <h3 class="symptom-selection-title">
+              <span>🩺</span> Pilih Gejala yang Dirasakan:
+            </h3>
+
+            <!-- Symptoms Checkboxes Grid -->
+            <div class="symptoms-selector-grid">
+              <div class="symptom-checkbox-card" data-symptom="demam">
+                <div class="symptom-check-circle">
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <span>Demam Tinggi</span>
+              </div>
+              
+              <div class="symptom-checkbox-card" data-symptom="batuk">
+                <div class="symptom-check-circle">
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <span>Batuk-batuk</span>
+              </div>
+              
+              <div class="symptom-checkbox-card" data-symptom="sesak">
+                <div class="symptom-check-circle">
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <span style="color:var(--danger); font-weight:700;">Sesak Napas</span>
+              </div>
+              
+              <div class="symptom-checkbox-card" data-symptom="pilek">
+                <div class="symptom-check-circle">
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <span>Hidung Tersumbat</span>
+              </div>
+
+              <div class="symptom-checkbox-card" data-symptom="sore_throat">
+                <div class="symptom-check-circle">
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <span>Nyeri Tenggorokan</span>
+              </div>
+
+              <div class="symptom-checkbox-card" data-symptom="lemas">
+                <div class="symptom-check-circle">
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <span>Lemas & Lesu</span>
+              </div>
+            </div>
+
+            <!-- Risk Calculation Result Card -->
+            <div class="symptom-result-panel" id="symptom-result-container">
+              <!-- Rendered via JS -->
+            </div>
+          </section>
+
+          <!-- ==========================================================================
+               VIEW PANEL 3: PENCEGAHAN (PREVENTION TRACKER & WHO GUIDE)
+               ========================================================================== -->
+          <section id="pencegahan-view" class="view-panel">
+            <div class="prevention-banner">
+              <div class="prevention-banner-text">
+                <h2>Rencana Proteksi</h2>
+                <p>Pertahankan kedisiplinan hidup bersih sehat demi kekebalan optimal paru-paru keluarga Anda.</p>
+              </div>
+            </div>
+
+            <!-- Circular Progress Ring Widget -->
+            <div class="progress-widget-box">
+              <div class="progress-circle-wrapper">
+                <svg class="progress-circle-svg">
+                  <circle class="progress-circle-bg" cx="30" cy="30" r="27"></circle>
+                  <circle class="progress-circle-bar" id="progress-bar-circle" cx="30" cy="30" r="27"></circle>
+                </svg>
+                <div class="progress-percent-text" id="progress-percent">0%</div>
+              </div>
+              <div class="progress-info-text">
+                <h4>Target Proteksi Harian</h4>
+                <p id="progress-label-desc">Lakukan checklist untuk melacak persentase kekebalan.</p>
+              </div>
+            </div>
+
+            <!-- Checklist Items -->
+            <div id="checklist-container">
+              <!-- Rendered via JS -->
+            </div>
+
+            <!-- WHO Handwash Step-by-Step Guide Widget -->
+            <div class="handwash-guide-box">
+              <div class="handwash-header">
+                <h4>6 Langkah Cuci Tangan WHO</h4>
+                <div class="handwash-steps-controller" id="handwash-dots">
+                  <!-- Dots rendered via JS -->
+                </div>
+              </div>
+              
+              <div class="handwash-step-content">
+                <div class="handwash-icon-ring" id="handwash-step-icon">🤚</div>
+                <h5 id="handwash-step-title">Langkah 1: Telapak Tangan</h5>
+                <p id="handwash-step-desc">Gosokkan kedua telapak tangan dengan memutar searah jarum jam secara merata dengan sabun.</p>
+              </div>
+
+              <div class="handwash-nav-btns">
+                <button class="handwash-nav-btn" id="handwash-prev" disabled>◀ Kembali</button>
+                <button class="handwash-nav-btn" id="handwash-next">Lanjut ▶</button>
+              </div>
+            </div>
+          </section>
+
+          <!-- ==========================================================================
+               VIEW PANEL 4: KLINIK (HEALTHCARE DIRECTORY & REGISTRATION)
+               ========================================================================== -->
+          <section id="klinik-view" class="view-panel">
+            
+            <!-- Search Widget -->
+            <div class="clinic-search-box">
+              <!-- Search Icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              <input type="text" id="clinic-search" class="clinic-search-input" placeholder="Cari nama faskes atau alamat...">
+            </div>
+
+            <!-- Type Filters Tab list -->
+            <div class="filter-tabs-container">
+              <button class="filter-tab active" data-filter="all">Semua Faskes</button>
+              <button class="filter-tab" data-filter="rsud">Rumah Sakit</button>
+              <button class="filter-tab" data-filter="puskesmas">Puskesmas</button>
+              <button class="filter-tab" data-filter="klinik">Klinik Pratama</button>
+            </div>
+
+            <!-- Clinics Output Container -->
+            <div class="clinic-list" id="clinic-list-container">
+              <!-- Rendered via JS -->
+            </div>
+          </section>
+
+        </main>
+
+        <!-- ==========================================================================
+             NATIVE-STYLE APP BOTTOM TAB BAR
+             ========================================================================== -->
+        <nav class="bottom-nav">
+          <!-- Tab 1: Edukasi -->
+          <button class="nav-item active" data-tab="edukasi">
+            <div class="nav-icon-box">
+              <!-- Book Icon -->
+              <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 19.5A2.5 2.5 0 0 0 6.5 22H20M4 19.5V3.5A2.5 2.5 0 0 1 6.5 1V4H20v18H6.5a2.5 2.5 0 0 1-2.5-2.5z"/></svg>
+            </div>
+            <span class="nav-label">Edukasi</span>
+          </button>
+          
+          <!-- Tab 2: Gejala -->
+          <button class="nav-item" data-tab="gejala">
+            <div class="nav-icon-box">
+              <!-- Stethoscope / Heartbeat Icon -->
+              <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <span class="nav-label">Gejala</span>
+          </button>
+          
+          <!-- Tab 3: Pencegahan -->
+          <button class="nav-item" data-tab="pencegahan">
+            <div class="nav-icon-box">
+              <!-- Shield Icon -->
+              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <span class="nav-label">Pencegahan</span>
+          </button>
+          
+          <!-- Tab 4: Klinik -->
+          <button class="nav-item" data-tab="klinik">
+            <div class="nav-icon-box">
+              <!-- Hospital Building Icon -->
+              <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V8l-6-6zM14 3v5h5M12 18v-6M9 15h6"/></svg>
+            </div>
+            <span class="nav-label">Klinik</span>
+          </button>
+        </nav>
+
+        <!-- ==========================================================================
+             SLIDE-UP MODAL OVERLAY (FOR DETAILS & SIMULATION FORMS)
+             ========================================================================== -->
+        <div class="modal-overlay" id="modal-overlay">
+          <div class="modal-container">
+            <div class="modal-header">
+              <h3 id="modal-title">Judul Informasi</h3>
+              <button class="modal-close-btn" id="modal-close" title="Tutup Modal">
+                <!-- Cross icon -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              </button>
+            </div>
+            <div class="modal-body" id="modal-body">
+              <!-- Content injected dynamically -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Core App Engine -->
+  <script src="app.js"></script>
+</body>
+</html>

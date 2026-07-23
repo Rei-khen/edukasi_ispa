@@ -292,15 +292,10 @@ document.addEventListener("DOMContentLoaded", () => {
   if (infoBtn) {
     infoBtn.addEventListener("click", () => {
       const infoHtml = `
-        <p><strong>Lawan ISPA</strong> adalah aplikasi edukatif interaktif yang didedikasikan untuk membantu keluarga mengenali secara dini, mencegah penyebaran, serta mengambil tindakan darurat tepat sasaran terhadap Infeksi Saluran Pernapasan Akut (ISPA).</p>
-        <p>Aplikasi ini dirancang responsif, interaktif, dan mudah dipahami oleh semua kalangan demi meningkatkan kesadaran kesehatan keluarga Indonesia.</p>
-        <h4>Hubungi Pusat Informasi Nasional:</h4>
-        <ul>
-          <li>Emergency Call: <strong>112</strong></li>
-          <li>Kemenkes Halo Kemkes: <strong>1500-567</strong></li>
-          <li>Email Layanan: <strong>info@lawanispa.go.id</strong></li>
-        </ul>
-        <p style="font-size: 0.65rem; text-align: center; color: #a0aec0; margin-top: 15px;">© 2026 Kementerian Kesehatan - Kampanye Peduli Udara Bersih</p>
+        <p><strong>Lawan ISPA</strong> adalah aplikasi edukatif interaktif yang didedikasikan untuk membantu masyarakat mengenali secara dini, mencegah penyebaran, serta mengambil tindakan darurat tepat sasaran terhadap Infeksi Saluran Pernapasan Akut (ISPA).</p>
+        <p>Aplikasi ini khusus dirancang sebagai media edukasi kesehatan untuk masyarakat di <strong>Desa Bapangi, Kecamatan Panca Lautang, Kabupaten Sidenreng Rappang (Sidrap)</strong>.</p>
+        <p>Program ini merupakan bentuk pengabdian dari mahasiswa <strong>KKN Tematik dan KKN Profesi Kesehatan Universitas Hasanuddin</strong> untuk meningkatkan kesadaran dan kesehatan masyarakat setempat.</p>
+        <p style="font-size: 0.65rem; text-align: center; color: #a0aec0; margin-top: 15px;">© 2026 Kolaborasi KKN Universitas Hasanuddin</p>
       `;
       openModal("Pusat Informasi Lawan ISPA", infoHtml);
     });

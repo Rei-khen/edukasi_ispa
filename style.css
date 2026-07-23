@@ -2587,3 +2587,121 @@ body {
 .footer-logos img:hover {
   transform: scale(1.1);
 }
+
+/* ==========================================================================
+   EMERGENCY SECTION (Kapan Harus ke Puskesmas)
+   ========================================================================== */
+.emergency-section {
+  margin-top: 20px;
+  margin-bottom: 24px;
+}
+
+.emergency-section .section-title {
+  font-size: 1.05rem;
+  line-height: 1.3;
+}
+
+.emergency-grid-top {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.emergency-grid-bottom {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.emergency-card {
+  border-radius: 12px;
+  padding: 10px 4px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1.5px solid transparent;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.emergency-card img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  margin-bottom: 8px;
+  filter: drop-shadow(0 3px 5px rgba(0,0,0,0.08));
+}
+
+.emergency-card p {
+  font-size: 0.58rem;
+  line-height: 1.25;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin: 0;
+  padding: 0 2px;
+}
+
+/* Specific Card Colors based on mockup */
+.bg-light-blue {
+  background-color: #f0f7f7;
+  border-color: #d1e9e5;
+}
+
+.bg-light-orange {
+  background-color: #fff3ec;
+  border-color: #fce3ce;
+}
+
+.bg-light-pink {
+  background-color: #fdf2f4;
+  border-color: #fadce2;
+}
+
+.bg-light-purple {
+  background-color: #f4f6fa;
+  border-color: #dce4f2;
+}
+
+/* Emergency Alert Banner */
+.emergency-alert-banner {
+  background-color: #edf2f9;
+  border-radius: 12px;
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #dce4f2;
+  position: relative;
+  overflow: hidden;
+}
+
+.ea-icon-left {
+  width: 32px;
+  height: 36px;
+  object-fit: contain;
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.ea-icon-right {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  position: absolute;
+  right: -8px;
+  bottom: -15px;
+  opacity: 0.15;
+  z-index: 1;
+}
+
+.emergency-alert-banner p {
+  font-size: 0.65rem;
+  line-height: 1.4;
+  color: var(--text-dark);
+  margin: 0;
+  font-weight: 600;
+  z-index: 2;
+}

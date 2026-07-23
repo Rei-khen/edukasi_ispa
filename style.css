@@ -1180,6 +1180,166 @@ body {
   line-height: 1.35;
 }
 
+/* ==========================================================================
+   LOKASI PUSTU TERDEKAT & KONSULTASI WHATSAPP SECTION
+   ========================================================================== */
+.location-section {
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
+
+.location-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  margin-bottom: 16px;
+  transition: box-shadow var(--transition-normal);
+}
+
+.location-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.location-map-wrapper {
+  width: 100%;
+  height: 220px;
+  background: #e5e7eb;
+  overflow: hidden;
+}
+
+.location-map-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+.location-info-body {
+  padding: 16px;
+}
+
+.location-details-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.location-icon-badge {
+  width: 42px;
+  height: 42px;
+  background-color: var(--primary);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-white);
+  flex-shrink: 0;
+}
+
+.location-icon-badge svg {
+  width: 22px;
+  height: 22px;
+}
+
+.location-text-content {
+  flex: 1;
+}
+
+.location-name {
+  font-family: var(--font-heading);
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #0d2137;
+  margin-bottom: 4px;
+}
+
+.location-address {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+.btn-gmaps-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 10px 16px;
+  border: 1.5px solid var(--primary);
+  border-radius: 12px;
+  color: var(--primary);
+  background-color: transparent;
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-family: var(--font-heading);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  box-sizing: border-box;
+}
+
+.btn-gmaps-link:hover {
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+.btn-gmaps-link svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* WhatsApp Consultation Banner Card */
+.wa-consult-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #70ebd9;
+  border-radius: var(--radius-md);
+  padding: 16px 18px;
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  cursor: pointer;
+}
+
+.wa-consult-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.wa-card-icon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00524a;
+  flex-shrink: 0;
+}
+
+.wa-card-icon svg {
+  width: 30px;
+  height: 30px;
+}
+
+.wa-card-text h4 {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #004d47;
+  margin-bottom: 2px;
+}
+
+.wa-card-text p {
+  font-size: 0.73rem;
+  color: #005952;
+  line-height: 1.35;
+}
+
 /* Dynamic Interactive Quiz Widget on Edukasi */
 .quiz-widget {
   background: linear-gradient(135deg, #1d3557 0%, #457b9d 100%);

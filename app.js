@@ -249,27 +249,11 @@ document.addEventListener("DOMContentLoaded", () => {
      ========================================================================== */
   const switchTab = (tabId) => {
     state.activeTab = tabId;
+    const targetPanel = document.getElementById(`${tabId}-view`);
+    if (targetPanel) {
+      targetPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
 
-    // Update bottom nav buttons UI
-    navItems.forEach(btn => {
-      if (btn.dataset.tab === tabId) {
-        btn.classList.add("active");
-      } else {
-        btn.classList.remove("active");
-      }
-    });
-
-    // Update views visible panels
-    views.forEach(panel => {
-      if (panel.id === `${tabId}-view`) {
-        panel.classList.add("active");
-        panel.scrollIntoView({ behavior: "smooth", block: "start" });
-      } else {
-        panel.classList.remove("active");
-      }
-    });
-
-    // Specific sub-initializer on tab entry
     if (tabId === "pencegahan") {
       updatePreventionProgress();
     } else if (tabId === "klinik") {
@@ -860,6 +844,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  // Initial load clinics
+  // Initial load components for single page web layout
+  updatePreventionProgress();
   renderClinics();
 });

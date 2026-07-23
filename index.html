@@ -44,17 +44,17 @@
           </div>
         </div>
         <div class="feature-item">
-          <div class="feature-icon-wrapper">🧼</div>
+          <div class="feature-icon-wrapper">📍</div>
           <div class="feature-text">
-            <h4>Rutinitas Pencegahan</h4>
-            <p>Checklist pencegahan harian interaktif dan panduan cuci tangan standar WHO.</p>
+            <h4>Lokasi Pustu Terdekat</h4>
+            <p>Petunjuk peta Google Maps dan lokasi Pustu Desa Bapangi terdekat.</p>
           </div>
         </div>
         <div class="feature-item">
-          <div class="feature-icon-wrapper">🏥</div>
+          <div class="feature-icon-wrapper">💬</div>
           <div class="feature-text">
-            <h4>Reservasi Antrean</h4>
-            <p>Cari faskes terdekat (RSUD, Puskesmas, Klinik) dan daftar antrean tanpa antri fisik.</p>
+            <h4>Konsultasi WhatsApp</h4>
+            <p>Layanan konsultasi langsung dengan petugas kesehatan via WhatsApp.</p>
           </div>
         </div>
       </div>
@@ -603,127 +603,7 @@
             </div>
           </section>
 
-          <!-- ==========================================================================
-               VIEW PANEL 3: PENCEGAHAN (PREVENTION TRACKER & WHO GUIDE)
-               ========================================================================== -->
-          <section id="pencegahan-view" class="view-panel">
-            <div class="prevention-banner">
-              <div class="prevention-banner-text">
-                <h2>Rencana Proteksi</h2>
-                <p>Pertahankan kedisiplinan hidup bersih sehat demi kekebalan optimal paru-paru keluarga Anda.</p>
-              </div>
-            </div>
-
-            <!-- Circular Progress Ring Widget -->
-            <div class="progress-widget-box">
-              <div class="progress-circle-wrapper">
-                <svg class="progress-circle-svg">
-                  <circle class="progress-circle-bg" cx="30" cy="30" r="27"></circle>
-                  <circle class="progress-circle-bar" id="progress-bar-circle" cx="30" cy="30" r="27"></circle>
-                </svg>
-                <div class="progress-percent-text" id="progress-percent">0%</div>
-              </div>
-              <div class="progress-info-text">
-                <h4>Target Proteksi Harian</h4>
-                <p id="progress-label-desc">Lakukan checklist untuk melacak persentase kekebalan.</p>
-              </div>
-            </div>
-
-            <!-- Checklist Items -->
-            <div id="checklist-container">
-              <!-- Rendered via JS -->
-            </div>
-
-            <!-- WHO Handwash Step-by-Step Guide Widget -->
-            <div class="handwash-guide-box">
-              <div class="handwash-header">
-                <h4>6 Langkah Cuci Tangan WHO</h4>
-                <div class="handwash-steps-controller" id="handwash-dots">
-                  <!-- Dots rendered via JS -->
-                </div>
-              </div>
-              
-              <div class="handwash-step-content">
-                <div class="handwash-icon-ring" id="handwash-step-icon">🤚</div>
-                <h5 id="handwash-step-title">Langkah 1: Telapak Tangan</h5>
-                <p id="handwash-step-desc">Gosokkan kedua telapak tangan dengan memutar searah jarum jam secara merata dengan sabun.</p>
-              </div>
-
-              <div class="handwash-nav-btns">
-                <button class="handwash-nav-btn" id="handwash-prev" disabled>◀ Kembali</button>
-                <button class="handwash-nav-btn" id="handwash-next">Lanjut ▶</button>
-              </div>
-            </div>
-          </section>
-
-          <!-- ==========================================================================
-               VIEW PANEL 4: KLINIK (HEALTHCARE DIRECTORY & REGISTRATION)
-               ========================================================================== -->
-          <section id="klinik-view" class="view-panel">
-            
-            <!-- Search Widget -->
-            <div class="clinic-search-box">
-              <!-- Search Icon -->
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-              <input type="text" id="clinic-search" class="clinic-search-input" placeholder="Cari nama faskes atau alamat...">
-            </div>
-
-            <!-- Type Filters Tab list -->
-            <div class="filter-tabs-container">
-              <button class="filter-tab active" data-filter="all">Semua Faskes</button>
-              <button class="filter-tab" data-filter="rsud">Rumah Sakit</button>
-              <button class="filter-tab" data-filter="puskesmas">Puskesmas</button>
-              <button class="filter-tab" data-filter="klinik">Klinik Pratama</button>
-            </div>
-
-            <!-- Clinics Output Container -->
-            <div class="clinic-list" id="clinic-list-container">
-              <!-- Rendered via JS -->
-            </div>
-          </section>
-
         </main>
-
-        <!-- ==========================================================================
-             NATIVE-STYLE APP BOTTOM TAB BAR
-             ========================================================================== -->
-        <nav class="bottom-nav">
-          <!-- Tab 1: Edukasi -->
-          <button class="nav-item active" data-tab="edukasi">
-            <div class="nav-icon-box">
-              <!-- Book Icon -->
-              <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 19.5A2.5 2.5 0 0 0 6.5 22H20M4 19.5V3.5A2.5 2.5 0 0 1 6.5 1V4H20v18H6.5a2.5 2.5 0 0 1-2.5-2.5z"/></svg>
-            </div>
-            <span class="nav-label">Edukasi</span>
-          </button>
-          
-          <!-- Tab 2: Gejala -->
-          <button class="nav-item" data-tab="gejala">
-            <div class="nav-icon-box">
-              <!-- Stethoscope / Heartbeat Icon -->
-              <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-            </div>
-            <span class="nav-label">Gejala</span>
-          </button>
-          
-          <!-- Tab 3: Pencegahan -->
-          <button class="nav-item" data-tab="pencegahan">
-            <div class="nav-icon-box">
-              <!-- Shield Icon -->
-              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </div>
-            <span class="nav-label">Pencegahan</span>
-          </button>
-          
-          <!-- Tab 4: Klinik -->
-          <button class="nav-item" data-tab="klinik">
-            <div class="nav-icon-box">
-              <!-- Hospital Building Icon -->
-              <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V8l-6-6zM14 3v5h5M12 18v-6M9 15h6"/></svg>
-            </div>
-            <span class="nav-label">Klinik</span>
-          </button>
-        </nav>
 
         <!-- ==========================================================================
              SLIDE-UP MODAL OVERLAY (FOR DETAILS & SIMULATION FORMS)

@@ -2587,6 +2587,10 @@ body {
   transform: scale(1.1);
 }
 
+.footer-logos img:last-child {
+  height: 54px;
+}
+
 /* ==========================================================================
    EMERGENCY SECTION (Kapan Harus ke Puskesmas)
    ========================================================================== */

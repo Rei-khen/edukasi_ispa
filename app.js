@@ -842,4 +842,17 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initial load components for single page web layout
   updatePreventionProgress();
   renderClinics();
+
+  // Obfuscated WhatsApp Consultation Link (Anti-bot scraping)
+  const waBtn = document.getElementById("wa-consult-btn");
+  if (waBtn) {
+    waBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      // Base64 Encoded WhatsApp Number
+      const secret = "NjI4NTI5OTk0MzAwMw=="; 
+      const realNumber = atob(secret);
+      const msg = encodeURIComponent("Halo petugas kesehatan Pustu Desa Bapangi, saya ingin berkonsultasi mengenai ISPA");
+      window.open(`https://wa.me/${realNumber}?text=${msg}`, "_blank");
+    });
+  }
 });
